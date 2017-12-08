@@ -6,7 +6,7 @@ class OrderItemsController < ApplicationController
     @order.save
     session[:order_id] = @order.id
     respond_to do |format|
-      format.html { redirect_to 'products_path' }
+      format.html { redirect_to products_path }
       format.js
     end
   end
