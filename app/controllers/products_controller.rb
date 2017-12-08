@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_filter :authorize, except: [:index, :show]
+  before_filter :authorize, except: [:index, :show, :hide]
 
   def index
     @products = Product.all
@@ -8,6 +8,12 @@ class ProductsController < ApplicationController
 
   def show
     @product = Product.find(params[:id])
+  end
+
+  def hide
+    respond_to do |format|
+      format.js
+    end
   end
 
   def new

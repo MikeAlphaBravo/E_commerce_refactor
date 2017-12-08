@@ -1,1 +1,5 @@
-console.log('you are in the show.js.erb');
+$('.section').hide();
+$('.product_show h3').text('<%= @product.name %>');
+$('.product_show h4').text('<%= @product.description %>');
+$('.product_show span').html('<%= image_tag(@product.image_url) %>');
+$('.product_show').show();
