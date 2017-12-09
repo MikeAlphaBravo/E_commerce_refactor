@@ -1,5 +1,7 @@
 # README
 
+Base 3 AJAX functionality:
+
 First commit 8:05:
 establish my own git repository for project clone
 
@@ -11,9 +13,12 @@ Moved onto second AJAX functionality to test .rb.erb functionality, then realize
 Updated and added input clear as well.
 
 15:10:
-Figured out the show and hide for a single product and admin authorization
+Figured out the show and hide for a single product.  Created show.js.erb and hide.js.erb
 
-
+15:34:
+Finalized the delete ajax functionality.  Created destroy.js.erb, added the respond_to in order_items_controller, added remote to carts/show
+ ___________________________________________________
+Refactor 6
 
 
 
