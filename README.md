@@ -10,6 +10,8 @@ Still working on first AJAX functionality.  Seem to have the process working and
 Moved onto second AJAX functionality to test .rb.erb functionality, then realized that the commented out code in cart total update was what was erroring on the rails side in console.
 Updated and added input clear as well.
 
+15:10:
+Figured out the show and hide for a single product and admin authorization
 
 
 

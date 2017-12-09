@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_filter :authorize, except: [:index, :show, :hide]
+  before_filter :authorize, except: [:index, :show, :hide, :destroy]
 
   def index
     @products = Product.all
@@ -26,6 +26,20 @@ class ProductsController < ApplicationController
       redirect_to '/'
     else
       render :new
+    end
+  end
+
+  def destroy
+    @order = current_order
+    @item = @order.order_items.find(params[:id])
+    # binding.pry
+    @item.destroy
+    @order.save
+    @total = current_order.total_price
+    # binding.pry
+    respond_to do |format|
+      format.html { redirect_to cart_path }
+      format.js { render 'carts/destroy' }
     end
   end
 
