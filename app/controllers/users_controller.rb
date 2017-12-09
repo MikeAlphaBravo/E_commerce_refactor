@@ -8,8 +8,9 @@ class UsersController < ApplicationController
     if user.save
       session[:user_id] = user.id
       redirect_to '/'
+      flash[:notice] = "Sign Up Succesful! User has been created."
     else
-      redirect_to '/signup'
+      redirect_to '/sign_up'
     end
   end
 

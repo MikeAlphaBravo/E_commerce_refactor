@@ -21,6 +21,14 @@ Finalized the delete ajax functionality.  Created destroy.js.erb, added the resp
 Refactor 6
 
 Saturday
+10:04:
+research validations and helpers for Rails.
+
+14:27:
+1. simple addition to existing helper method of number_field for limiting to positive number inputs
+
+15:02:
+2. Flash messages added in sessions controller for sign_in and sign_out and in users_controller for sign_up
 
 
 
