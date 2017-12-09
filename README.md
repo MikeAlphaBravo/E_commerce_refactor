@@ -20,6 +20,7 @@ Finalized the delete ajax functionality.  Created destroy.js.erb, added the resp
  ___________________________________________________
 Refactor 6
 
+Saturday
 
 
 
