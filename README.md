@@ -30,7 +30,10 @@ research validations and helpers for Rails.
 15:02:
 2. Flash messages added in sessions controller for sign_in and sign_out and in users_controller for sign_up
 
+15:53:
+3. User password validation and flash messages and placeholders to explain requirements and success or failure.
 
+4.  
 
 ### Original programmer notes:
 

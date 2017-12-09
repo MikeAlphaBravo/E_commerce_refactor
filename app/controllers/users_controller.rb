@@ -11,6 +11,7 @@ class UsersController < ApplicationController
       flash[:notice] = "Sign Up Succesful! User has been created."
     else
       redirect_to '/sign_up'
+      flash[:notice] = "Sign Up was NOT Succesful! Please check your information and try again."
     end
   end
 
