@@ -33,7 +33,13 @@ research validations and helpers for Rails.
 15:53:
 3. User password validation and flash messages and placeholders to explain requirements and success or failure.
 
-4.  
+15:56:
+Added the bones of update and destroy with admin issues causing a block.  Will look into how to fix those.
+4. (will soon be admin update and delete)
+
+5. (flash messages for all of 4.)
+
+6.  Product validations?  Whole numbers? or Paperclip?
 
 ### Original programmer notes:
 
