@@ -11,14 +11,10 @@
         <%= f.hidden_field :product_id, value: product.id %>
         <%= f.number_field :quantity, min: 0, placeholder: "Oops, breaks if you don't add input!" %>
         <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
-        <% if current_admin %>
+        <% if current_user.admin? %>
             <td><%= link_to 'Edit', edit_product_path(product) %></td>
             <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           <% end %>
-
-          How to define admin, then I can link this to edit and destroy.  Need help building update.
-
-
       <% end %>
     </div>
   <% end %>
