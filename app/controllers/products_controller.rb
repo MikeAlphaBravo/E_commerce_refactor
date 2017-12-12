@@ -33,7 +33,8 @@ class ProductsController < ApplicationController
   def edit
   end
 
-  # def update
+  def update
+    
   # respond_to do |format|
   #   if @product.update(product_params)
   #     format.html { redirect_to @product, notice: 'Album was successfully updated.' }
@@ -42,7 +43,7 @@ class ProductsController < ApplicationController
   #     format.html { render :edit }
   #     format.json { render json: @product.errors, status: :unprocessable_entity }
   #   end
-  # end
+  end
 
   def destroy
     @product = Product.find(params[:id])
