@@ -6,5 +6,5 @@ class User < ApplicationRecord
     self.orders.where(status: 2).includes(order_items: :product)
   end
 
-  validates :password, :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,}\z/}
+  # validates :password, :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,}\z/}
 end

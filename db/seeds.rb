@@ -6,6 +6,7 @@ class Seed
   end
 
   def generate_products
+    # Products.destroy_all
     20.times do |i|
       Product.create!(
         name: Faker::Lorem.word,
@@ -15,6 +16,19 @@ class Seed
       )
     end
   end
+
+  # def generate_users
+  #   Users.destroy_all
+  #   1.times do |i|
+  #     User.create!(
+  #       id: 1,
+  #       name: "admin",
+  #       email: "admin@admin.com",
+  #       admin: true
+  #     )
+  #   end
+  # end
+
 end
 
 Seed.begin

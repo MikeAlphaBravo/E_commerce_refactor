@@ -31,28 +31,44 @@ class ProductsController < ApplicationController
   end
 
   def edit
+    @product = Product.find(params[:id])
+    # if @product.edit(product_params)
+    #   respond_to do |format|
+    #     format.html { redirect_to @product, notice: 'Album was successfully edited.' }
+    #     format.json { render :show, status: :ok, location: @product }
+    #   end
+    # else
+    #   respond_to do |format|
+    #     format.html { render :edit }
+    #     format.json { render json: @product.errors, status: :unprocessable_entity }
+    #   end
+    # end
   end
 
+
   def update
-    
-  # respond_to do |format|
-  #   if @product.update(product_params)
-  #     format.html { redirect_to @product, notice: 'Album was successfully updated.' }
-  #     format.json { render :show, status: :ok, location: @product }
-  #   else
-  #     format.html { render :edit }
-  #     format.json { render json: @product.errors, status: :unprocessable_entity }
-  #   end
+    @product = Product.find(params[:id])
+    if @product.update!(product_params)
+      respond_to do |format|
+        format.html { redirect_to root_path, notice: 'Product was successfully updated. Check the bottom of the product list for updated product.' }
+        format.json { render :show, status: :ok, location: @product }
+      end
+    else
+      respond_to do |format|
+        format.html { render :edit }
+        format.json { render json: @product.errors, status: :unprocessable_entity }
+      end
+    end
   end
+
 
   def destroy
     @product = Product.find(params[:id])
     @product.destroy
-    # respond_to do |format|
-    #   format.html { redirect_to products_path }
-    #   format.js
-    # end
-    redirect_to '/'
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js
+    end
     flash[:notice] = "Product has been deleted"
   end
 

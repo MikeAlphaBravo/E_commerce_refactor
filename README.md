@@ -17,6 +17,11 @@ Figured out the show and hide for a single product.  Created show.js.erb and hid
 
 15:34:
 Finalized the delete ajax functionality.  Created destroy.js.erb, added the respond_to in order_items_controller, added remote to carts/show
+
+Tuesday
+16:55:
+got first ajax functionality working, sends to another view but via ajax not reload of page.  Details exist there, photo etc.
+
  ___________________________________________________
 Refactor 6
 
