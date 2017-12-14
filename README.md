@@ -22,6 +22,10 @@ Tuesday
 16:55:
 got first ajax functionality working, sends to another view but via ajax not reload of page.  Details exist there, photo etc.
 
+Wednesday
+14:43:
+Fixed AJAX function of editing product.  It is not the most elegant solution but I will certainly keep trucking on this.
+
  ___________________________________________________
 Refactor 6
 
@@ -41,11 +45,17 @@ research validations and helpers for Rails.
 Sunday
 15:56:
 Added the bones of update and destroy with admin issues causing a block.  Will look into how to fix those.
-4. (will soon be admin update and delete)
+4. admin update and delete available
 
-5. (flash messages for all of 4.)
+5. flash messages for all 4 functions
 
-6.  Product validations?  Whole numbers? or Paperclip?
+Wednesday
+16:30:
+6.  Product validations for inputs
+
+    Also added the error message.
+
+    Refreshed admin and cart flash totals.
 
 ### Original programmer notes:
 

@@ -48,7 +48,7 @@ class ProductsController < ApplicationController
 
   def update
     @product = Product.find(params[:id])
-    if @product.update!(product_params)
+    if @product.update(product_params)
       respond_to do |format|
         format.html { redirect_to root_path, notice: 'Product was successfully updated. Check the bottom of the product list for updated product.' }
         format.json { render :show, status: :ok, location: @product }
